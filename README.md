@@ -1,10 +1,10 @@
-Integrazione CheshireCat per Microsoft Word
-Descrizione
+# Integrazione CheshireCat per Microsoft Word
+## Descrizione
 
 Questo progetto integra le funzionalità di CheshireCat (un assistente AI) all'interno di Microsoft Word attraverso macro VBA, aggiungendo un menu contestuale e una scheda personalizzata nella barra multifunzione.
 Installazione
 
-Importazione manuale dei moduli (consigliato)
+## Importazione manuale dei moduli (consigliato)
 
     Scarica i file .bas dalla repository
 
@@ -21,9 +21,9 @@ Importazione manuale dei moduli (consigliato)
     Salva il progetto e chiudi l'editor VBA
 
 
-Configurazione
+## Configurazione
 
-OPZIONALE Configurazione della barra multifunzione
+## OPZIONALE Configurazione della barra multifunzione
 
     Vai su File → Opzioni → Personalizza barra multifunzione
 
@@ -39,7 +39,7 @@ OPZIONALE Configurazione della barra multifunzione
 
     Clicca "OK" per salvare
 
-Configurazione del menu contestuale
+## Configurazione del menu contestuale
 
 Il menu contestuale viene aggiunto automaticamente all'avvio di Word. Se non compare:
 
@@ -47,15 +47,8 @@ Il menu contestuale viene aggiunto automaticamente all'avvio di Word. Se non com
 
     Esegui manualmente la macro "AddCheshireCatContextMenu"
 
-File disponibili per il download
 
-    CheshireCat_Main.bas - Codice principale delle funzioni
-
-    CheshireCat_ContextMenu.bas - Gestione del menu contestuale
-
-    CheshireCat_Toolbar.bas - Configurazione della barra degli strumenti
-
-Utilizzo
+## Utilizzo
 
     Seleziona del testo in un documento Word
 
@@ -67,7 +60,7 @@ Utilizzo
 
     La risposta verrà inserita nel documento
 
-Personalizzazione
+## Personalizzazione
 
 Modifica queste costanti nel codice per personalizzare la connessione:
 vba
@@ -76,9 +69,10 @@ Private Const DEFAULT_URL As String = "http://192.168.71.63:1865"
 Private Const DEFAULT_USERNAME As String = "admin"
 Private Const DEFAULT_PASSWORD As String = "admin_psw"
 
-Requisiti di sistema
+## Requisiti di sistema
 
     Microsoft Word 2016 o versioni successive
 
     Abilitazione delle macro (File → Opzioni → Centro protezione → Impostazioni macro → "Abilita tutte le macro")
+
 
