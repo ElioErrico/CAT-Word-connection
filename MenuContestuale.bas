@@ -1,4 +1,7 @@
 Attribute VB_Name = "MenuContestuale"
+' ==========================
+' Modulo: MenuContestuale
+' ==========================
 Option Explicit
 
 Sub AddCheshireCatContextMenu()
@@ -28,11 +31,7 @@ Sub AddCheshireCatContextMenu()
     mySubMenu.OnAction = "CancellaCronologiaChat"
     mySubMenu.FaceId = 100
     
-    ' Aggiungi la voce per convertire tabella markdown
-    Set mySubMenu = myMenu.Controls.Add(Type:=msoControlButton)
-    mySubMenu.Caption = "Converti tabella markdown"
-    mySubMenu.OnAction = "ConvertiTabellaMarkdown"
-    mySubMenu.FaceId = 16
+
 End Sub
 
 Sub RemoveCheshireCatContextMenu()
